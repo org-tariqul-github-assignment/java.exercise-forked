@@ -31,14 +31,17 @@ public class Utilities {
 	}
 	//return reverse of a string ( using a char array and no temporary variable)
 	// works only when all characters in the string is ASCII
+	/*
+	 * X-OR : true when anyone is true (any one, but not both)
+	 */
 	public static String reverseString3(String str){
 		char[] arr = str.toCharArray(); 
 		int begin = 0;
 		int end = arr.length-1;
 		while(begin<end){
-			arr[begin] = (char)( arr[begin]^arr[end]);
-			arr[end] = (char)( arr[begin]^arr[end]);
-			arr[begin] = (char)( arr[end]^arr[begin]);
+			arr[begin] = (char)( arr[begin]^arr[end] );
+			arr[end] =   (char)( arr[begin]^arr[end] );
+			arr[begin] = (char)( arr[begin]^arr[end] );
 			begin++; end--;
 		}
 		return String.valueOf(arr);
