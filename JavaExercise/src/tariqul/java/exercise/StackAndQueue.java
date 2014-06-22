@@ -1,6 +1,7 @@
 package tariqul.java.exercise;
 
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 
 /*
@@ -18,8 +19,7 @@ public class StackAndQueue {
 	LinkedList<Integer> myDQueue;
 
 	
-	LinkedList<Integer> myPriorityQueuu; // TODO
-	LinkedList<Integer> myCircularQueue; // TODO
+	PriorityQueue<Integer> myPriorityQueuu; // TODO
 	
 	public StackAndQueue(){
 		myStack = new LinkedList<Integer>();

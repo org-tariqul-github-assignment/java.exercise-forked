@@ -32,7 +32,7 @@ public class Utilities {
 	//return reverse of a string ( using a char array and no temporary variable)
 	// works only when all characters in the string is ASCII
 	/*
-	 * X-OR : true when anyone is true (any one, but not both)
+	 * Bitwise X-OR : true when anyone is true (any one, but not both)
 	 */
 	public static String reverseString3(String str){
 		char[] arr = str.toCharArray(); 
